@@ -193,13 +193,8 @@ meta:
                        EB F?}
 
     condition:
-
         (#worthless_cmp >= 3 and ($reg_key_check or $reg_key_check_2 or $reg_key_check_3)) or
-
         $reg_key_check_3 or
-
         any of ($inf_loop_*)
-
- 
 
 }
