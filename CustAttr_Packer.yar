@@ -3,8 +3,7 @@ rule CustAttr_Packer {
     meta:
         author = "Jared Anderson"
         date = "2021-08-20"
-        description = "Detects XLoader for macOS"
-        hashes = ""
+        description = "Detects CustAttr/CutsAttr, a common .NET packer/crypter."
 
     strings:
         $s1 = "mscoree.dll" ascii wide nocase
