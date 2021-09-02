@@ -1,7 +1,7 @@
 rule Snake_Keylogger {
 
     meta:
-        author = "Jared Anderson"
+        author = "muzi"
         date = "2021-08-20"
         description = "Detects Snake Keylogger (unpacked)"
         hashes = "96a6df07b7d331cd6fb9f97e7d3f2162e56f03b7f2b7cdad58193ac1d778e025"

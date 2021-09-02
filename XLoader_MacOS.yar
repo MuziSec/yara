@@ -1,7 +1,7 @@
 rule XLoader_MacOS {
 
     meta:
-        author = "Jared Anderson"
+        author = "muzi"
         date = "2021-08-20"
         description = "Detects XLoader for macOS"
 

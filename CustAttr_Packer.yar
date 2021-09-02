@@ -1,7 +1,7 @@
 rule CustAttr_Packer {
 
     meta:
-        author = "Jared Anderson"
+        author = "muzi"
         date = "2021-08-20"
         description = "Detects CustAttr/CutsAttr, a common .NET packer/crypter."
 
