@@ -37,6 +37,7 @@ rule SPLCrypt {
         }
 
     condition:
+        #match_1_shr > 1 and #match_2_shl_13 > 1 and
         for any i in (0..#match_1_shr):
             ($match_2_shl_13 in (@match_1_shr[i]..@match_1_shr[i]+200))
 
