@@ -2,7 +2,7 @@ rule Arkei {
     meta:
         author = "muzi"
         date = "2022-04-09"
-        description = "Detects Arkei Stealer and also maybe Vidar/Mars variants"
+        description = "Detects Arkei Stealer."
         hash = "fbc4983f6003ffbcbcfac4cae47c944a"
 
 
@@ -16,12 +16,6 @@ rule Arkei {
                      83 C4 ?? // add esp,  
         }
  
-        $decrypt2 = {
-                      A3 ?? ?? ?? ??
-                      68 ?? ?? ?? ??
-                      E8 ?? ?? ?? ??
-                      83 C4 ??
-        }
 
     condition:
         uint16be(0) == 0x4D5A and
