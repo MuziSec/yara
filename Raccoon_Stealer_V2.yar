@@ -1,4 +1,4 @@
-rule Classification_Raccoon_Stealer_V2: raccoon_stealer_v2
+rule Raccoon_Stealer_V2: raccoon_stealer_v2
 {
     meta:
 	author = "muzi"
