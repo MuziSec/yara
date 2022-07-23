@@ -17,7 +17,7 @@ rule Raccoon_Stealer_V2: raccoon_stealer_v2
         $s6 = "\\ffcookies.txt" wide
         $s7 = "	%s %s" wide
         $s8 = "wallet.dat" wide
-        $s9 = "S-1-5-18" wide // malware checks if running as system
+        $s9 = "S-1-5-18" ascii wide // malware checks if running as system
 
         /*
 
