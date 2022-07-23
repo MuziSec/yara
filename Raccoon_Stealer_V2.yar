@@ -46,7 +46,7 @@ rule Raccoon_Stealer_V2: raccoon_stealer_v2
                                     99 [0-8]
                                     F7 7D ?? [0-8]
                                     8B (45|4D|55|5D|6D|75|7D) ?? [0-8]
-                                    0F (04|0C|14|1C|2C|34|3C) (01|02|04|06) (01|02|04|06) [0-8]
+                                    0F BE ?? ?? [0-8]
                                     03 (C1|C2|C3|C5|C6|C7) [0-8]
                                     03 (F0|F1|F2|F3|F5|F6|F7) [0-8]
                                     81 E6 ?? ?? ?? ?? [0-8]
@@ -126,5 +126,5 @@ rule Raccoon_Stealer_V2: raccoon_stealer_v2
 
     condition:
         6 of ($s*) or
-        (#c2_comms > 3 and #decryption_routine > 20)
+        ($c2_comms and $decryption_routine)
 }
